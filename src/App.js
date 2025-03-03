@@ -12,6 +12,11 @@ const images = [
   "https://placehold.co/600x400/blue/black",
 ];
 
+const sections = [
+  { title: "What is JavaScript?", content: "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications." },
+  { title: "What are React Hooks?", content: "Hooks are functions that let you use state and other React features in functional components. They were introduced in React 16.8." },
+];
+
 function App() {
   return (
     <div className="App">
