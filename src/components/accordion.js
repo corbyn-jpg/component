@@ -43,6 +43,7 @@ const styles = {
     padding: "20px",
     margin: 0,
     textAlign: "center",
+    backgroundColor: "#fff"
   },
 };
 
