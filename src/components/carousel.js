@@ -33,9 +33,10 @@ const styles = {
     justifyContent: "center",
   },
   image: {
-    width: "600px",
-    height: "400px",
-    margin: "0 10px",
+    width: "800px",
+    height: "600px",
+    margin: "0 15px",
+    borderRadius: "8px",
   },
   button: {
     backgroundColor: "#444",
@@ -43,6 +44,8 @@ const styles = {
     border: "none",
     padding: "10px 15px",
     cursor: "pointer",
+    width: "50px",
+    height: "50px"
   },
 };
 

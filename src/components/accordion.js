@@ -24,20 +24,25 @@ const Accordion = ({ sections }) => {
 const styles = {
   section: {
     border: "1px solid #ddd",
+    width: "70%",
     borderRadius: "8px",
-    marginBottom: "10px",
+    marginBottom: "15px",
+    marginLeft: "auto",
+    marginRight: "auto",
   },
   button: {
     width: "100%",
-    padding: "10px",
+    padding: "12px",
     textAlign: "left",
     border: "none",
     backgroundColor: "#f1f1f1",
     cursor: "pointer",
+    fontSize: "16px",
   },
   content: {
-    padding: "10px",
+    padding: "20px",
     margin: 0,
+    textAlign: "center",
   },
 };
 

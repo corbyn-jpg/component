@@ -34,6 +34,7 @@ const styles = {
     padding: "10px",
     marginRight: "10px",
     width: "300px",
+    fontSize: "16px"
   },
   button: {
     padding: "10px 15px",
@@ -41,6 +42,7 @@ const styles = {
     color: "#fff",
     border: "none",
     cursor: "pointer",
+    fontSize: "16px"
   },
 };
 

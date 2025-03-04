@@ -9,21 +9,21 @@ const Navbar = () => {
 
   return (
     <nav style={styles.navbar}>
-      <h1 style={styles.brand}>My Brand</h1>
+      <h1 style={styles.brand}>Dungeons and Dragons</h1>
       <div style={styles.dropdown}>
         <button onClick={toggleDropdown} style={styles.dropdownButton}>
           Menu
         </button>
         {isOpen && (
           <ul style={styles.dropdownMenu}>
-            <li style={styles.menuItem} onClick={() => alert("Option 1 clicked")}>
-              Option 1
+            <li style={styles.menuItem} onClick={() => alert("Races clicked")}>
+              Races
             </li>
-            <li style={styles.menuItem} onClick={() => alert("Option 2 clicked")}>
-              Option 2
+            <li style={styles.menuItem} onClick={() => alert("Classes clicked")}>
+              Classes
             </li>
-            <li style={styles.menuItem} onClick={() => alert("Option 3 clicked")}>
-              Option 3
+            <li style={styles.menuItem} onClick={() => alert("Spells clicked")}>
+              Spells
             </li>
           </ul>
         )}
@@ -40,12 +40,14 @@ const styles = {
     padding: "10px 20px",
     backgroundColor: "#333",
     color: "#fff",
+    fontSize: "20px"
   },
   brand: {
     margin: 0,
   },
   dropdown: {
     position: "relative",
+    fontSize: "18px"
   },
   dropdownButton: {
     backgroundColor: "#444",
@@ -53,6 +55,7 @@ const styles = {
     border: "none",
     padding: "10px 15px",
     cursor: "pointer",
+    fontSize: "20px"
   },
   dropdownMenu: {
     position: "absolute",
