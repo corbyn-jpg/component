@@ -37,10 +37,11 @@ const styles = {
     height: "600px",
     margin: "0 15px",
     borderRadius: "8px",
+    border: "1px solid #ddd"
   },
   button: {
-    backgroundColor: "#444",
-    color: "#fff",
+    backgroundColor: "#fff",
+    color: "#000",
     border: "none",
     padding: "10px 15px",
     cursor: "pointer",

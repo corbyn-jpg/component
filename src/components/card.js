@@ -12,6 +12,7 @@ const Card = ({ image, title, description }) => {
 
 const styles = {
   card: {
+    background: "white",
     border: "1px solid #ddd",
     borderRadius: "8px",
     padding: "16px",
