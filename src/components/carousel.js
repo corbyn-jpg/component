@@ -43,6 +43,7 @@ const styles = {
     backgroundColor: "#fff",
     color: "#000",
     border: "none",
+    borderRadius: "8px",
     padding: "10px 15px",
     cursor: "pointer",
     width: "50px",
