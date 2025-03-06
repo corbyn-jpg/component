@@ -1,11 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
     <nav style={styles.navbar}>
@@ -16,21 +15,24 @@ const Navbar = () => {
         </button>
         {isOpen && (
           <ul style={styles.dropdownMenu}>
-            <li style={styles.menuItem} onClick={() => alert("Races clicked")}>
-              Races
+            <li style={styles.menuItem}>
+              <Link to="/" style={{ textDecoration: "none", color: "white" }}>Home</Link>
             </li>
-            <li style={styles.menuItem} onClick={() => alert("Classes clicked")}>
-              Classes
+            <li style={styles.menuItem}>
+              <Link to="/races" style={{ textDecoration: "none", color: "white" }}>Races</Link>
             </li>
-            <li style={styles.menuItem} onClick={() => alert("Spells clicked")}>
-              Spells
+            <li style={styles.menuItem}>
+              <Link to="/classes" style={{ textDecoration: "none", color: "white" }}>Classes</Link>
+            </li>
+            <li style={styles.menuItem}>
+              <Link to="/spells" style={{ textDecoration: "none", color: "white" }}>Spells</Link>
             </li>
           </ul>
         )}
       </div>
     </nav>
   );
-};
+}
 
 const styles = {
   navbar: {
@@ -47,7 +49,7 @@ const styles = {
   },
   dropdown: {
     position: "relative",
-    fontSize: "18px"
+    fontSize: "18px",
   },
   dropdownButton: {
     backgroundColor: "#444",
@@ -66,6 +68,7 @@ const styles = {
     padding: 0,
     margin: 0,
     border: "1px solid #555",
+    color: "fff"
   },
   menuItem: {
     padding: "10px 15px",

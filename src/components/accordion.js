@@ -14,10 +14,22 @@ const Accordion = ({ sections }) => {
           <button onClick={() => toggleSection(index)} style={styles.button}>
             {section.title}
           </button>
-          {activeIndex === index && <p style={styles.content}>{section.content}</p>}
+          {activeIndex === index && (
+            <div style={styles.content}>
+              <p>{section.content}</p>
+              {section.image && (
+                <img
+                  src={section.image}
+                  alt={section.title}
+                  style={styles.image}
+                />
+              )}
+            </div>
+          )}
         </div>
       ))}
     </div>
+
   );
 };
 
