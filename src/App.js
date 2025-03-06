@@ -64,6 +64,27 @@ function Classes() {
   );
 }
 
+function Spells() {
+  return (
+    <div>
+      <h2 style={{color: "white", fontSize: "20px"}}>Fireball</h2>
+      <p style={{color: "white", paddingLeft: "200px", paddingRight: "200px"}}>
+        A bright streak flashes from you to a point you choose within range and then blossoms with a low roar into a fiery explosion. Each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one.
+        <br /><br />
+        Flammable objects in the area that aren’t being worn or carried start burning.
+        <br /><br />
+        Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 3.
+        <br /><br />
+        * - (a ball of bat guano and sulfur)
+      </p>
+      <img
+        src="https://www.glassstaff.com/cdn/shop/articles/fireball-d20-design-made-by-glassstaff_jpg.webp?v=1674642119&width=2048"
+        alt="Fireball Spell"
+      />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App" style={{ minHeight: "100vh", backgroundColor: "#f0f0f0", padding: "20px" }}>
@@ -73,6 +94,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/races" element={<Races />} />
           <Route path="/classes" element={<Classes />} />
+          <Route path="/spells" element={<Spells />} />
         </Routes>
       </Router>
     </div>
