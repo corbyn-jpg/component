@@ -19,6 +19,7 @@ const styles = {
     width: "300px",
     textAlign: "center",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    justifyContent: "center"
   },
   image: {
     width: "100%",
